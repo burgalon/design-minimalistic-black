@@ -26,3 +26,13 @@
 {% endblock %}
 
 
+{% block beforeBodyEnd %}
+	{{ block.super }}
+	<script type="text/javascript" src="{{MEDIA_URL}}portfolios/js/cufon-yui.js"></script>
+	<script type="text/javascript" src="{{ pack.cufon_font.get_file }}"></script>
+	<script type="text/javascript">
+		Cufon.replace('p', {'text-shadow': '1px 1px #000', 'fontSize': '24px'});
+		Cufon.now();
+		delete cufon_elements;
+	</script>
+{% endblock %}
