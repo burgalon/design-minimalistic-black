@@ -1,0 +1,24 @@
+{% block head %}
+<style type="text/css">
+	body {background: url({{ pack.background.get_file }}) center top no-repeat #000;}
+</style>
+{% endblock %}
+
+{% block body %}
+	<p><strong>
+		{{ page.dic.text }}
+	</strong></p>
+
+	<ul id="social" class="nav feed">
+		{% for key,val in portfolio.dic.social|split %}
+			<li><a href="{{ val }}" class="float icon24 {{ key }}">{{ key }}</a></li>
+		{% endfor %}
+	</ul>
+
+	<div class="footer">
+		{{  portfolio.dic.email|obfuscate }}
+	</div>
+
+{% endblock %}
+
+

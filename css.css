@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {margin:100px 65% 40px 40px; padding:0px; color:#e4e5d9; font:Normal 30px Georgia, "Times New Roman", Times, serif;}
+strong{color:#fff; font-weight:normal;}
+p{margin:0px 0px 20px 0px; padding:0px;}
+a{text-decoration:none; color:#ff424f;}
+a:hover{color:#83060f;}
+
+.feed {display:inline;}
+.feed a{color:#fcad48;}
+.feed a:hover{color:#c98022;}
+.feed ul{font-size:18px;}
+
+.location{position:absolute; top:60px; right:0px; padding:40px; margin:0px 0px 0px 70%;}
+.location a{color:#dfea5f;}
+.location a:hover{color:#bac261;}
+.location ul{list-style-type:none; margin:0px; padding:0px;}
+.location li{margin:0px 0px .8em 0px;}
+.location img{display:none;}
+
+.footer{position:absolute; bottom:0px; right:0px; padding:40px;}
+.footer a{color:#4a8a9d;}
+.footer a:hover{color:#0d5266;}
