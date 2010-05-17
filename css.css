@@ -2,13 +2,13 @@
 /* CSS Document */
 
 body {margin:100px 65% 40px 40px; padding:0px; color:#e4e5d9; font:Normal 30px Georgia, "Times New Roman", Times, serif;}
-strong{color:#fff; font-weight:normal;}
+strong{color: #003333; font-weight:normal;}
 p{margin:0px 0px 20px 0px; padding:0px;}
-a{text-decoration:none; color:#ff424f;}
+a{text-decoration:none; color: #6666ff;}
 a:hover{color:#83060f;}
 
 .feed {display:inline;}
-.feed a{color:#fcad48;}
+.feed a{color: #0066ff;}
 .feed a:hover{color:#c98022;}
 .feed ul{font-size:18px;}
 
