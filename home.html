@@ -23,13 +23,11 @@
 		{{  portfolio.dic.email|obfuscate }}
 	</div>
 
-<div id="footer" class="span-24">
-	{% block footer %}
-		<a href="http://{{ site.domain }}">{{ site.name }}</a>
-		| <a href="{% url contact %}">Contact</a>
+	<div id="footer-powered">
+		<a title="{{ site_excerpt }}" href="http://{{ site.domain }}">{{ site.name }}</a> {{ site_excerpt }}
+		| <a rel="nofollow" href="http://{{ site.domain }}{{ page.get_absolute_url}}">DashBoard</a>
 		{% if last_portfolio %}
-		| Last portfolio viewed <a href="{{ last_portfolio.url }}">{{ last_portfolio.title }}</a>
+		| Last portfolio viewed &lrm;<a href="{{ last_portfolio.url }}">{{ last_portfolio.title }}</a>
 		{% endif %}
-	{% endblock %}
-</div>
+	</div>
 {% endblock %}
