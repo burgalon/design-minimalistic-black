@@ -23,4 +23,13 @@
 		{{  portfolio.dic.email|obfuscate }}
 	</div>
 
+<div id="footer" class="span-24">
+	{% block footer %}
+		<a href="http://{{ site.domain }}">{{ site.name }}</a>
+		| <a href="{% url contact %}">Contact</a>
+		{% if last_portfolio %}
+		| Last portfolio viewed <a href="{{ last_portfolio.url }}">{{ last_portfolio.title }}</a>
+		{% endif %}
+	{% endblock %}
+</div>
 {% endblock %}
