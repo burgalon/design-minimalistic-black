@@ -22,3 +22,5 @@ a:hover{color:#83060f;}
 .footer{position:absolute; bottom:0px; right:0px; padding:40px;}
 .footer a{color:#4a8a9d;}
 .footer a:hover{color:#0d5266;}
+
+#footer-powered {font-size:12px; position:relative; width:950px;}
